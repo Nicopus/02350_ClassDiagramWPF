@@ -1,0 +1,21 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:viewModel="clr-namespace:ClassDiagram.ViewModel"
+                    xmlns:uc="clr-namespace:ClassDiagram.View.UserControls"
+                    xmlns:elements="clr-namespace:ClassDiagram.ViewModel.Elements"
+                    xmlns:connections="clr-namespace:ClassDiagram.ViewModel.Connections">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="ShapeStyleDictionary.xaml"/>
+
+    </ResourceDictionary.MergedDictionaries>
+
+    <DataTemplate DataType="{x:Type elements:ClassViewModel}">
+        <uc:ClassUserControl Style="{StaticResource ElementControl}"/>
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type connections:AssociationViewModel}">
+        <Line Style="{StaticResource Association}"/>
+    </DataTemplate>
+    
+
+</ResourceDictionary>

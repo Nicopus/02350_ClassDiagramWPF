@@ -1,0 +1,17 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style x:Key="ElementControl" TargetType="Border">
+        <Setter Property="Width" Value="{Binding Width}"/>
+        <Setter Property="Height" Value="{Binding Height}"/>
+    </Style>
+
+    <Style x:Key="Association" TargetType="Line">
+        <Setter Property="X1" Value="{Binding From.CenterX}"/>
+        <Setter Property="Y1" Value="{Binding From.CenterY}"/>
+        <Setter Property="X2" Value="{Binding To.CenterX}"/>
+        <Setter Property="Y2" Value="{Binding To.CenterY}"/>
+        <Setter Property="StrokeThickness" Value="5"/>
+        <Setter Property="Stroke" Value="Black"/>
+    </Style>
+
+</ResourceDictionary>

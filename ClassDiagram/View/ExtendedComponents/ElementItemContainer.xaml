@@ -1,0 +1,15 @@
+﻿<ListBoxItem x:Class="ClassDiagram.View.ExtendedComponents.ElementItemContainer"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ClassDiagram.View.ExtendedComponents"
+      xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"   
+      mc:Ignorable="d">
+    <ListBoxItem.Template>
+        <ControlTemplate TargetType="ListBoxItem">
+
+            <ContentPresenter x:Name="itemPresenter" Margin="2"/>
+        </ControlTemplate>
+    </ListBoxItem.Template>
+</ListBoxItem>
